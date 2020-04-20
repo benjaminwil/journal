@@ -1,0 +1,59 @@
+$cursor-and-select-color: var(--color-blue);
+$html-attribute-color: var(--fg-bright);
+$markdown-link-color: var(--fg-bright);
+$markdown-list-item-color: var(--fg-bright);
+
+.cm-s-maeku-editor.CodeMirror {
+  padding: 1em;
+  background-color: var(--bg-primary);
+  color: var(--fg-primary);
+  border: var(--border-box-style);
+  line-height: 1.5em;
+}
+
+.cm-s-maeku-editor .CodeMirror-cursor {
+  border: 0.3em solid $cursor-and-select-color;
+}
+
+.cm-s-maeku-editor div.CodeMirror-selected {
+  background: $cursor-and-select-color;
+}
+
+.cm-s-maeku-editor span.cm-header {
+  color: var(--fg-bright);
+  font-weight: 600;
+}
+
+.cm-s-maeku-editor span.cm-comment {
+  color: var(--fg-bright);
+}
+.cm-s-maeku-editor span.cm-atom {
+  color: var(--color-blue);
+}
+.cm-s-maeku-editor span.cm-number {
+  color: var(--color-blue);
+}
+
+.cm-s-maeku-editor span.cm-attribute,
+.cm-s-maeku-editor span.cm-property,
+.cm-s-maeku-editor span.cm-tag {
+  color: $html-attribute-color;
+  font-weight: 600;
+}
+
+.cm-s-maeku-editor span.cm-link,
+.cm-s-maeku-editor span.cm-string,
+.cm-s-maeku-editor span.cm-variable {
+  color: $markdown-link-color;
+  font-weight: 600;
+}
+
+.cm-s-maeku-editor span.cm-keyword,
+.cm-s-maeku-editor span.cm-variable-2 {
+  color: $markdown-list-item-color;
+}
+
+.cm-s-maeku-editor .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: var(--fg-bright) !important;
+}
